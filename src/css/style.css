@@ -1,0 +1,528 @@
+/* ===== Header ===== */
+header {
+  background-color: #00008B;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.pagina-inicial {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pagina-inicial li a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.pagina-inicial li a:hover,
+.pagina-inicial li a:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+/* Setas e links da pagina inicial */
+.pagina-inicial li a::before {
+  color: #fff; /* seta branca */
+  font-weight: bold;
+}
+
+/* ===== Bem-vindo ===== */
+.bem-vindo {
+  max-width: 800px;
+  margin: 40px auto 60px;
+  text-align: center;
+  color: #00008B;
+}
+
+.bem-vindo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bem-vindo p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ===== Vídeo ===== */
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 60px;
+  max-width: 560px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 139, 0.3);
+  border: none;
+}
+
+/* ===== Main content ===== */
+main {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  color: #00008B;
+}
+
+h1, h2, h3 {
+  color: #00008B;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  padding-left: 20px;
+  color: #222;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* ===== Detalhes (Como Funciona e Benefícios) ===== */
+.detalhes {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.detalhe {
+  background-color: #e9f5f1;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 45%;
+  min-width: 300px;
+  color: #1b4332;
+}
+
+.detalhe ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.detalhe ul li {
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #2f3e46;
+}
+
+.detalhe ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #00008B;
+  font-weight: bold;
+}
+
+/* ===== Metodologia Ensino ===== */
+.metodologia-ensino {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  background-color: #f3f9fd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.metodologia-ensino h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.metodologia-ensino .introducao {
+  font-size: 30px;
+  color: #00008B;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.metodologia-blocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.bloco {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.bloco:hover {
+  transform: translateY(-5px);
+}
+
+.icone {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.bloco h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.bloco p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* ===== Valores ===== */
+.valores-escola {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f3f9fd;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.valores-escola h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.valores-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.valor {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.valor:hover {
+  transform: translateY(-5px);
+}
+
+.valor h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.valor p {
+  font-size: 16px;
+}
+
+/* ===== Campeonatos ===== */
+.campeonatos {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.campeonatos h2 {
+  margin-bottom: 40px;
+}
+
+.campeonatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card-campeonato {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-campeonato:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-campeonato img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-campeonato h3 {
+  padding: 20px;
+  color: #00008B;
+  font-weight: 600;
+}
+
+/* ===== Container compacto ===== */
+.container {
+  max-width: 480px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 139, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #00008B;
+}
+
+/* ===== Campos de entrada ===== */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #00008B;
+  box-shadow: 0 0 5px rgba(0, 0, 139, 0.3);
+  outline: none;
+}
+
+/* ===== Botão ===== */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #00008B;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #001f5b;
+}
+
+/* ===== Container de formulário pequeno ===== */
+.formulario-compacto {
+  max-width: 420px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Linha "dia" compacta */
+.dia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: #f0f4ff;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #00008B;
+  align-items: center;
+}
+
+.dia label {
+  flex: 1 1 100px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.dia select {
+  flex: 2 1 160px;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+/* ===== Status compacto ===== */
+.status {
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  min-width: 90px;
+}
+
+.status.disponivel {
+  background-color: #28a745;
+}
+
+.status.indisponivel {
+  background-color: #dc3545;
+}
+
+/* ===== Links ===== */
+li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+li a:hover {
+  text-decoration: underline;
+  color: #ff8800;
+}
+
+/* ===== Footer ===== */
+.footer,
+.footer-institucional {
+  background-color: #00008B;
+  color: white;
+  text-align: center;
+  padding: 30px 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 100px;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+.footer-box {
+  flex: 1 1 300px;
+}
+
+.footer-logo {
+  height: 80px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.slogan {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-box h3 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #e9f5f1;
+}
+
+.footer-box p,
+.footer-box a {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botão WhatsApp ===== */
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1rem;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  box-shadow: 0 6px 14px rgba(18, 140, 126, 0.7);
+}
+
+/* ===== Links padrão ===== */
+a {
+  color: #ddddec;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
